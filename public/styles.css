@@ -113,3 +113,7 @@ button:hover{
 .LoginInner{
 	text-align: center;
 }
+
+.dropdown-content {
+	display: none;
+}

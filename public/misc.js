@@ -21,12 +21,25 @@ function pageToStaffs() {
 }
 /**
 toggle Form */
-
-function toggleForm(){
+function toggleForm() {
 	var x = document.querySelector(".form")
-if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
+	toggle(x);
+}
+/**
+toggle dropdown */
+function toggle_dropdown() {
+	var x = document.querySelector(".dropdown-content")
+	toggle(x);
+}
+
+/**
+toggle element
+x = display element
+ */
+function toggle(x) {
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
 }
