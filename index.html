@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+<link rel="stylesheet" href="public/styles.css">
+<script type="text/javascript"></script>
+
+</head>
+<body>
+	<div >
+		<form id="AdminLogin" action="#">
+			<div>
+				<label for="AdminLogin"> </label> 
+				<input type=text
+					placeholder="Enter Admin Name" id="AdminName" required>
+				<input type="password" placeholder="Enter Password" id="AdminPsw"
+					required="required">
+				<button type="submit" onclick="logincheck()">Login</button>
+			</div>
+		</form>
+	</div>
+	<div id="StaffLogin">
+		<form action="login.js">
+			<div>
+				<label for="StaffLogin"> </label> <input type=text
+					placeholder="Enter Staff Name" name="StaffLogin" required>
+				<input type="password" placeholder="Enter Password" name="psw"
+					required="required">
+				<button type="submit">Login</button>
+			</div>
+		</form>
+	</div>
+	
+<script src="./public/login.js"></script>
+</body>
+</html>

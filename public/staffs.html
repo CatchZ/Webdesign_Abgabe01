@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Staffs</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<!-- navbar -->
+	<!-- navbar -->
+	<div>
+		<nav>
+			<ul>
+				<li><a href="./admin.html">Home</a></li>
+				<li><a href="../index.html">Logout</a></li>
+			</ul>
+		</nav>
+	</div>
+	<!-- List -->
+	<table>
+		<tr>
+			<td>ID</td>
+			<td>First_Name</td>
+			<td>Last_Name</td>
+			<td>DOB</td>
+			<td>Gender</td>
+			<td>Department</td>
+			<td>Email_ID</td>
+		</tr>
+		<tr>
+			<td>01</td>
+			<td>Staff1</td>
+			<td>Dummy</td>
+			<td>1.1.1998</td>
+			<td>female</td>
+			<td>Dep1</td>
+			<td>Email_ID</td>
+		</tr>
+		<tr>
+			<td>02</td>
+			<td>Staff2</td>
+			<td>Dummy2</td>
+			<td>1.1.1998</td>
+			<td>male</td>
+			<td>Dep1</td>
+			<td>Email_ID</td>
+		</tr>
+	</table>
+	<!--Control panel-->
+	<div>
+		<button type="button" onclick="toggleForm()">Add Staff</button>
+		<button type="button" onclick="">Update Staff</button>
+		<button type="button" onclick="">Delete Staff</button>
+	</div>
+	<!-- Form -->
+	<div class="form" style="display: none">
+		<form action="">
+			<label for="Staff_Id">Student_Id</label> <input type="text"
+				id="Staff_Id" name="Student_Id"> <label for="First_Name">First_Name</label>
+			<input type="text" id="First_Name" name="First_Name"> <label
+				for="Last_Name">Last_Name</label> <input type="text" id="Last_Name"
+				name="Last_Name"> <label for="DOB">DOB</label> <input
+				type="text" id="DOB" name="DOB"> <a>Gender</a> <label
+				for="Female">Female</label> <input type="radio" id="Female"
+				name="Gender" value="Female"> <label for="Men">Men</label> <input
+				type="radio" id="Men" name="Gender" value="Male"> <label
+				for="Other">Other</label> <input type="radio" id="Other"
+				name="Gender" value="Other"> <label for="Department">Department</label>
+			<select id="Department" name="Department">
+				<option value="Dep1">Dep1</option>
+				<option value="Dep2">Dep2</option>
+			</select> <label for="Email_ID">Email_ID</label> <input type="email"
+				id="Email_ID" name="Email_ID"> <input type="submit"
+				value="Submit">
+		</form>
+	</div>
+	<!-- Dropdownmenü -->
+	<div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <a href="#">Network</a>
+    <a href="#">Databases</a>
+    <a href="#">Webdevelopment</a>
+  </div>
+  <!--Resultlist -->
+	<div>
+	<h1>Results for Network</h1>
+	</div>
+  
+  
+</div>
+
+
+	<script type="text/javascript" src="./misc.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+@charset "ISO-8859-1";
+
+body {
+	background-color: #ffff80;
+}
+
+/*Navbar*/
+nav {
+	background-color: #c0c0c0;
+}
+
+nav li {
+	/**/
+	/*richtet navbar Elemente vertikal aus*/
+	display: inline-flex;
+	align-self: space-between;
+	/*setzte unterteilung*/
+	border-right: 1px solid yellow;
+	border-left: 1px solid yellow;
+}
+
+nav ul {
+	list-style-type: none;
+	/*Abstand zu Decke*/
+	margin: 0;
+	/*Abstand zu Seite*/
+	padding: 0;
+}
+
+nav a {
+	color: black;
+	/*entfernt linkunterstrich*/
+	text-decoration: none;
+	padding: 2px;
+	margin: 2px;
+}
+
+nav a:hover {
+	background-color: white;
+}
+/* letztes Element der Navbar nach rechts*/
+nav li:last-child {
+	float: right;
+}
+
+/*Tabelle*/
+table {
+	border: 1px solid;
+}
+
+table td {
+	border: 1px solid;
+}
+
+/*form*/
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+input[type=text] {
+	border-bottom: 2px solid red
+}
+input[type="radio"]{
+}
+.form {
+	/*weite des formular fenster*/
+	max-width: 300px;
+	border: 2px solid black;
+	background-color: rgba(255, 255, 234, 1);
+}
+
+textarea {
+	padding: 3px;
+	margin: 3px;
+}
+
+select {
+	width: 100%;
+	border: none;
+	border-radius: 4px;
+	background-color: #f1f1f1;
+}
+
+
