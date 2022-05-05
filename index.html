@@ -8,21 +8,22 @@
 
 </head>
 <body>
-	<div >
-		<form id="AdminLogin" action="#">
-			<div>
-				<label for="AdminLogin"> </label> 
-				<input type=text
-					placeholder="Enter Admin Name" id="AdminName" required>
-				<input type="password" placeholder="Enter Password" id="AdminPsw"
+	<div id="AdminLogin" class="LogIn">
+		<form action="#">
+		<p>Admin Login</p>
+			<div class="LoginInner">
+				<label for="AdminLogin"> </label> <input type=text
+					placeholder="Enter Admin Name" id="AdminName" required> <input
+					type="password" placeholder="Enter Password" id="AdminPsw"
 					required="required">
 				<button type="submit" onclick="logincheck()">Login</button>
 			</div>
 		</form>
 	</div>
-	<div id="StaffLogin">
-		<form action="login.js">
-			<div>
+	<div id="StaffLogin" class="LogIn">
+		<form action="#">
+		<p>Staff Login</p>
+			<div class="LoginInner">
 				<label for="StaffLogin"> </label> <input type=text
 					placeholder="Enter Staff Name" name="StaffLogin" required>
 				<input type="password" placeholder="Enter Password" name="psw"
@@ -31,7 +32,7 @@
 			</div>
 		</form>
 	</div>
-	
-<script src="./public/login.js"></script>
+
+	<script src="./public/login.js"></script>
 </body>
 </html>
