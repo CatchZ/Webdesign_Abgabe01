@@ -67,7 +67,6 @@ input[type=text] {
 .form {
 	/*weite des formular fenster*/
 	max-width: 300px;
-
 }
 
 textarea {
@@ -82,35 +81,33 @@ select {
 	background-color: #f1f1f1;
 }
 
-/*LogIn*/ 
+/*LogIn*/
 /* Set a style for all buttons */
-
 .LogIn {
-	display:flex;
+	display: flex;
 	flex-direction: inline;
 	padding: 5px;
-	margin:5px;
+	margin: 5px;
 	justify-content: center;
 	text-align: center;
-	
-	
 }
 
 button {
-  background-color: #04AA6D;
-  color: black;
-  padding: 4px 5px;
-  margin: 8px 0;
-  border: 1px black;
-  cursor: pointer;
-  width: 100%;
-  max-width: 100px;
+	background-color: #04AA6D;
+	color: black;
+	padding: 4px 5px;
+	margin: 8px 0;
+	border: 1px black;
+	cursor: pointer;
+	width: 100%;
+	max-width: 100px;
 }
-button:hover{
+
+button:hover {
 	opacity: 80%;
 }
 
-.LoginInner{
+.LoginInner {
 	text-align: center;
 }
 
