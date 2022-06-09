@@ -4,16 +4,15 @@
  
  /**
  test */
-let y; 
 
-const loadLeander =async ()=>
+
+const loadJSON =async ()=>
 {
     const dataJ = await
         fetch("./student.json")    
     return dataJ.json();
 }
 
-console.log(loadLeander());
 
 
 
@@ -49,7 +48,7 @@ function genRow(data) {
 	const gender = document.createElement("td");
 	gender.innerText = data.gender;
 	const dep = document.createElement("td");
-	dep.innerText = data.deparment;
+	dep.innerText = data.department;
 	const email_Id = document.createElement("td");
 	email_Id.innerText = data.email_Id;
 	const doe = document.createElement("td");
@@ -69,15 +68,21 @@ function genRow(data) {
 takes an array students and genertes a toble out of it
  */
 async function getTab() {
-	const data = await loadLeander();
+	const data = await loadJSON();
 	data.forEach(function(i) { genRow(i); console.log("hj") });
 	}
 	
-function genTabDepFiltered(data){
-	genRow(data.filter(checkDep()));
+async function genTabDepFiltered(){
+	document.getElementById("StudentTable").innerHTML = "";
+	const data = await loadJSON();
+	console.log(data) ;
+	const data2 = data.filter(checkDep);
+	console.log(data2);
+	data2.forEach(function(i) { genRow(i); });
 }
-function checkDep(){
-	data.dep == "IT"
+function checkDep(element){
+	console.log(element);
+	return element.department == "IT";
 }
 
 function filteredIt() {
