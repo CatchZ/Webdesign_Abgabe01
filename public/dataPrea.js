@@ -14,28 +14,6 @@ const loadJSON =async ()=>
 }
 
 
-
-
-
-/*
- async function getJason(){
-	fetch("./student.json")
-	.then((res)=>res.json())
-	.then((data)=>{y = data;console.log("getJason1")});
-	console.log("getJason");
-}
-
-/*
-const  x = await fetch("./student.json")
-	.then(response => {
-		return response.json();
-	})
-getJason();
-console.log("y: "+y);
-/*console.log("x:"+x);*/
-
-/**
-takes an student objekt and generates a tabell row out of it */
 function genRow(data) {
 	const student_id = document.createElement("td");
 	student_id.innerText = data.id;
