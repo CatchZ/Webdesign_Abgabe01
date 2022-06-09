@@ -50,27 +50,37 @@ async function getTab() {
 	data.forEach(function(i) { genRow(i); console.log("hj") });
 	}
 	
-async function genTabDepFiltered(){
+async function genTabDepFilteredIT(filterFunction){
 	document.getElementById("StudentTable").innerHTML = "";
 	const data = await loadJSON();
-	console.log(data) ;
-	const data2 = data.filter(checkDep);
-	console.log(data2);
+	const data2 = data.filter(checkDepIT);
 	data2.forEach(function(i) { genRow(i); });
 }
-function checkDep(element){
+async function genTabDepFilteredMath(filterFunction){
+	document.getElementById("StudentTable").innerHTML = "";
+	const data = await loadJSON();
+	const data2 = data.filter(checkDepMath);
+	data2.forEach(function(i) { genRow(i); });
+}
+async function genTabDepFilteredBio(filterFunction){
+	document.getElementById("StudentTable").innerHTML = "";
+	const data = await loadJSON();
+	const data2 = data.filter(checkDepBio);
+	data2.forEach(function(i) { genRow(i); });
+}
+
+function checkDepIT(element){
 	console.log(element);
 	return element.department == "IT";
 }
 
-function filteredIt() {
-	let y = x.filter(checkDep());
-	getTab(y);
-}
-/**
-bla  */
-function test() {
-	console.log("test");
+function checkDepMath(element){
+	console.log(element);
+	return element.department == "Math";
 }
 
+function checkDepBio(element){
+	console.log(element);
+	return element.department == "Bio";
+}
 
