@@ -8,7 +8,7 @@
 <script type="text/javascript"></script>
 
 </head>
-<body>
+<body onload = "getTab()">
 	<!-- navbar -->
 	<div>
 		<nav>
@@ -20,12 +20,10 @@
 	</div>
 	<!-- List Students and Staff -->
 <div>
-<ol>
-<li>Student, Dummy1, 1.1.1998, female, Dep1, blabla@bla.com</li>
-<li>Student, Dummy2, 1.1.1998, male, Dep1, blabla@bla.com</li>
-<li>Staff, Dummy1, 1.1.1998, female, Dep1, blabla@bla.com</li>
-<li>Staff, Dummy2, 1.1.1998, male, Dep1, blabla@bla.com</li>
-</ol>
+	<div>
+		<table id="StudentTable">
+		</table>
+	</div>
 </div>
 <!-- Controlls -->
 <div>
@@ -36,5 +34,6 @@
 <button type="button" onclick="pageToStaffs()">Staff</button>
 </div>
 <script src="./misc.js"></script>
+<script  src="./dataPrea.js"></script>
 </body>
 </html>
