@@ -43,3 +43,22 @@ function toggle(x) {
 		x.style.display = "none";
 	}
 }
+
+function validateDate() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+function validate() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+function makeDOE() {
+
+}
+function isNotToday(Date) {}
