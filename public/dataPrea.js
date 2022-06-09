@@ -46,6 +46,7 @@ function genRow(data) {
 takes an array students and genertes a toble out of it
  */
 async function getTab() {
+	document.getElementById("StudentTable").innerHTML = "";
 	const data = await loadJSON();
 	data.forEach(function(i) { genRow(i); console.log("hj") });
 	}

@@ -61,4 +61,13 @@ function validate() {
 function makeDOE() {
 
 }
-function isNotToday(Date) {}
+function isNotToday() {
+	const date = new Date().toISOString.split("T")[0];
+	return date;
+}
+
+function consolelogDate(){
+	const x = document.querySelector("#DOB").value;
+	console.log(x);
+}
+DOB.max = new Date().toISOString().split("T")[0];
